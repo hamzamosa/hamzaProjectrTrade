@@ -1,0 +1,140 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>VertexFXClient</RootNamespace>
+    <EnableDefaultItems>False</EnableDefaultItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Telerik.UI.for.Wpf.70.Xaml.Trial" Version="2023.2.718" />
+  </ItemGroup>
+  
+  <ItemGroup>
+  <ApplicationDefinition Include="App.xaml">
+    <Generator>MSBuild:Compile</Generator>
+    <SubType>Designer</SubType>
+  </ApplicationDefinition>
+  <Page Include="MainWindow.xaml">
+    <Generator>MSBuild:Compile</Generator>
+    <SubType>Designer</SubType>
+  </Page>
+  <Page Include="languages\ResourceDictionares.en.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="languages\Resource_China.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="languages\Resource_French.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="languages\Resource_Hebrew.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="languages\Resource_Hindi .xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="languages\Resource_Japanees .xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="languages\Resource_Portugal.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="languages\Resource_Russian.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="languages\Resource_Span.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="languages\Resource_Urdu.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="languages\Res_Ar.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Compile Include="App.xaml.cs">
+    <DependentUpon>App.xaml</DependentUpon>
+    <SubType>Code</SubType>
+  </Compile>
+  <Compile Include="images\IconViewModel.cs" />
+  <Compile Include="lang\Resource_ar.Designer.cs">
+    <DesignTime>True</DesignTime>
+    <AutoGen>True</AutoGen>
+    <DependentUpon>Resource_ar.resx</DependentUpon>
+  </Compile>
+  <Compile Include="lang\Resource_en.Designer.cs">
+    <DesignTime>True</DesignTime>
+    <AutoGen>True</AutoGen>
+    <DependentUpon>Resource_en.resx</DependentUpon>
+  </Compile>
+  <Compile Include="MainWindow.xaml.cs">
+    <DependentUpon>MainWindow.xaml</DependentUpon>
+    <SubType>Code</SubType>
+  </Compile>
+  <Compile Include="Properties\Resources.Designer.cs">
+    <DesignTime>True</DesignTime>
+    <AutoGen>True</AutoGen>
+    <DependentUpon>Resources.resx</DependentUpon>
+  </Compile>
+  <Compile Include="Properties\Settings.Designer.cs">
+    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    <AutoGen>True</AutoGen>
+    <DependentUpon>Settings.settings</DependentUpon>
+  </Compile>
+</ItemGroup>
+  
+  <ItemGroup>
+    <Resource Include="images\china.png" />
+    <Content Include="images\france (1).png" />
+    <EmbeddedResource Include="lang\Resource_ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lang\Resource_en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="images\Sybmbols.png" />
+    <Resource Include="images\icons8-ellipse-48.png" />
+    <Resource Include="images\icons8-rectangle-48.png" />
+    <Resource Include="images\icons8-triangle-32.png" />
+    <Resource Include="images\honduras.png" />
+    <Resource Include="images\japan.png" />
+    <Resource Include="images\pakistan.png" />
+    <Resource Include="images\portugal.png" />
+    <Resource Include="images\russia.png" />
+    <Resource Include="images\spain.png" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Resource Include="images\india.png" />
+    <Resource Include="images\Arabic.png" />
+    <Resource Include="images\united-states (1).png" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Resource Include="images\save.png.png" />
+    <Resource Include="images\data-collection.png" />
+    <Resource Include="images\undo.png" />
+    <Resource Include="images\NewPostion.png" />
+    <Resource Include="images\france.png" />
+    <Resource Include="images\gear-option.png" />
+    <Resource Include="images\paste.png" />
+    <Resource Include="images\question-mark.png" />
+    <Resource Include="images\television.png" />
+    <Resource Include="images\print.png" />
+    <Resource Include="images\united-states.png" />
+  </ItemGroup>
+
+</Project>
